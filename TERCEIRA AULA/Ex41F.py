@@ -1,18 +1,9 @@
-s = int(input("Digite o valor da sequencia que deseja visualizar: "))
+n = int(input("Digite um valor menor que 100: "))
+while(n<=0 and n>100):
+    print("Erro!")
+    n = int(input("Digite um valor menor que 100: "))
 
-a = 2
-b = 5
-
-r = a + b
-
-while(a > 100):
-    print("Digite o valor novamente: ")
-    a = int(input("Digite um valor menor que 100: "))
-
-for i in range(3, s, 2):
-    print(r)
-    a = b
-    b = a
-    a = r
-    r = a + b
-
+for i in range(3,n+1,2):
+    if(i == 0):
+        a = ((i+1)*(i+1))+1
+        print(a)
